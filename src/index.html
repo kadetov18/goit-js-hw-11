@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search App</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <form id="search-form">
+        <h1>Image Search</h1>
+        <input
+          type="search"
+          name="query"
+          placeholder="Enter your search term"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+
+    <main>
+      <ul class="gallery"></ul>
+    </main>
+
+    <script src="./js/pixabay-api.js" type="module"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/render-functions.js" type="module"></script>
+  </body>
+</html>
