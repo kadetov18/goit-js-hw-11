@@ -2,13 +2,13 @@
 import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
-import { searchImages } from './pixabay-api.js';
+import { searchImages } from './js/pixabay-api.js'; // Відносний шлях до pixabay-api.js в папці js
 import {
   renderImages,
   showLoadingIndicator,
   hideLoadingIndicator,
   showMessage,
-} from './render-functions.js';
+} from './js/render-functions.js';
 
 const form = document.querySelector('form');
 const searchInput = document.querySelector('input[type="search"]');

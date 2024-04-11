@@ -7,6 +7,9 @@ const galleryElement = document.querySelector('.gallery');
 let loadingIndicator = document.querySelector('.loading-indicator');
 
 export function renderImages(images) {
+  // Очищаємо галерею перед додаванням нових зображень
+  galleryElement.innerHTML = '';
+
   images.forEach(image => {
     const imageCard = document.createElement('div');
     imageCard.classList.add('image-card');
